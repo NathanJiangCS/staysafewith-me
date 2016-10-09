@@ -1,0 +1,221 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  width: 100%;
+  float: right;
+  height: 100%;
+  z-index: 1;
+}
+
+.controls {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 43px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  padding: 0 50px;
+}
+#origin-input {
+  margin-left: 485px;
+}
+
+#destination-input {
+  margin-left: 8px;
+  ;
+}
+
+#origin-input,
+#destination-input {
+  z-index: 3;
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0 11px 0 13px;
+  text-overflow: inherit;
+  width: calc(35% - 117px);
+  margin-top: 10px;
+  border-radius: 1.5px;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+  border-color: #4d90fe;
+}
+
+#mode-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  margin-left: 12px;
+  padding: 5px 11px 0px 11px;
+}
+
+#mode-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#inputs {
+  width: 50%;
+  margin: 0 auto;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  z-index: 2;
+  background-color: #111;
+  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.55);
+}
+
+#logo {
+  margin: 0;
+  display: inline-block;
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 4.3rem;
+  color: #FFFFFF;
+}
+
+#panel {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background-color: #eee;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0px 0 21px;
+  margin: 0;
+
+}
+
+.way_min {
+  margin: 0;
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.way_info {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.way_via {
+  margin: 0;
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.way-wrapper {
+  display: inline-block;
+  flex: 1;
+  padding: 10px;
+  height: 100%;
+}
+
+.way-wrapper:hover {
+  cursor: pointer;
+  background-color: #E0E0E0;
+}
+
+.way-wrapper:nth-child(1):nth-last-child(1) {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* two items */
+
+.way-wrapper:nth-child(1):nth-last-child(2),
+.way-wrapper:nth-child(2):nth-last-child(1) {
+  width: 40%;
+  height: 100%;
+}
+
+
+/* three items */
+
+.way-wrapper:nth-child(1):nth-last-child(3),
+.way-wrapper:nth-child(2):nth-last-child(2),
+.way-wrapper:nth-child(3):nth-last-child(1) {
+  width: calc(100% / 3);
+  margin: 0;
+  height: 100%;
+}
+
+
+/* four items */
+
+.way-wrapper:nth-child(1):nth-last-child(4),
+.way-wrapper:nth-child(2):nth-last-child(3),
+.way-wrapper:nth-child(3):nth-last-child(2),
+.way-wrapper:nth-child(4):nth-last-child(1) {
+  width: 25%;
+  margin: 0;
+}
+
+.way-wrapper:not(:last-child) {
+  border-right: 1px solid rgba(17,17,17,0.12);
+}
+
+.danger {
+  margin-left: 40px;
+  float: right;
+  margin-right: 60px;
+  margin-top: 13px;
+  display: inline-block;
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+.dangerRate {
+  display: block;
+}
+
+.hehe {
+  margin: 0;
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  font-weight: 900;
+  line-height: 1.7rem;
+  margin-bottom: 5px;
+}
+
+.way-wrapper {
+  display: inline-block;
+}
+
+.peace {
+  display: inline-block;
+  font-family: 'Roboto', 'san-serif';
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  bottom: 0;
+  margin-left: 16px;
+  top: 1.48rem;
+}
+
+.red {color: #F44336;}
+
+.orange {color: #FF9800;}
+
+.yello {color: #FFEB3B}

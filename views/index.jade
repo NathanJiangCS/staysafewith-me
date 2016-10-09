@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Stay Safe With Me
+    meta(name='viewport', content='initial-scale=1.0, user-scalable=no')
+    meta(charset='utf-8')
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    script(src="/javascripts/jquery.js")
+    link(rel="stylesheet", href="/stylesheets/animate.css")
+    script(src="/javascripts/animate.js")
+    script(src="/javascripts/crossdomain.js")
+  body
+    header
+      h1#logo STAYSAFEWITH
+      div.peace|peace for Detroit
+    input#origin-input.controls(type='text', placeholder='Enter an origin location')
+    input#destination-input.controls(type='text', placeholder='Enter a destination location')
+    #map
+    script.
+    script(src="/javascripts/initMap.js")
+    script(src="/javascripts/getPoints.js")
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBxd-6vVapHiQW-uQgkwo1MRmtOx6mbRwk&libraries=places,visualization&callback=initMap&language=en', async='', defer='')
+    script(src="/javascripts/fuckgoogle.js")

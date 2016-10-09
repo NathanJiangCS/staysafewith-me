@@ -1,2 +1,1 @@
-# staysafewith-me
-MHacks
+# DetroitSaver-server

@@ -89,7 +89,7 @@ function initMap() {
   destination_autocomplete.addListener('place_changed', function() {
     var place = destination_autocomplete.getPlace();
     var result;
-    displayPath = [];
+    
     if (!place.geometry) {
       window.alert("Autocomplete's returned place contains no geometry");
       return;
@@ -173,7 +173,7 @@ function route(origin_place_id, destination_place_id, travel_mode,
       window.alert('Directions request failed due to ' + status);
     }
   });*/
-
+    displayPath = [];
     if (status == "OK") {
         //var changedResponse;
             for (var i = 0, len = response.routes.length; i < len; i++) {

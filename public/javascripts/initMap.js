@@ -81,7 +81,7 @@ function initMap() {
     // the other place ID
     origin_place_id = place.place_id;
     placeId.push(origin_place_id);
-
+    displayPath = [];
     route(origin_place_id, destination_place_id, travel_mode,
       directionsService, directionsDisplay, displayPath);
   });
@@ -103,11 +103,6 @@ function initMap() {
     else {
       $('header').after($("<div id='panel'></div>"));
       $('#panel').animateCss('fadeIn');
-    }
-    function please(){
-      var n = $(this).index();
-      console.log('works');
-      directionsDisplay.setDirections(displayPath[n]);
     }
 
       $.ajax({
@@ -147,6 +142,8 @@ function initMap() {
         }
       })
 
+	
+    displayPath = [];
     route(origin_place_id, destination_place_id, travel_mode,
       directionsService, directionsDisplay, displayPath);
       })
@@ -173,7 +170,7 @@ function route(origin_place_id, destination_place_id, travel_mode,
       window.alert('Directions request failed due to ' + status);
     }
   });*/
-    displayPath = [];
+   // displayPath = [];
     if (status == "OK") {
         //var changedResponse;
             for (var i = 0, len = response.routes.length; i < len; i++) {
@@ -206,5 +203,5 @@ function route(origin_place_id, destination_place_id, travel_mode,
   );
 }
 function please(n){
-  directionsDisplay.setDirections(displayPath[n+1]);
+   directionsDisplay.setDirections(displayPath[n+1]);
 }

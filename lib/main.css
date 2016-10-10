@@ -1,0 +1,58 @@
+.initial-text {
+	font-family: 'Montserrat Subrayada', sans-serif;
+	font-size: 4.25em;
+    font-weight: bold;
+	color: #ffffff;
+	position: relative; 
+    padding-left: 30%;
+    margin-right: 8%;
+    z-index: 2;
+    opacity: 1;
+    text-align: right;
+    text-shadow: 2px 2px #A5A5AF;
+    top: -5%;
+}
+
+.welcome-screen {
+	background-image: url("http://imageshack.com/a/img922/5696/4ZkFcK.gif");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 90%;
+	width: 94%;
+	position: fixed;
+	border-radius: 1em;
+    margin: 2% 3%;
+}
+
+.description {
+	font-family: 'Raleway', sans-serif;
+	font-size: 140%;
+	color: #ffffff;
+	position: absolute;
+    text-align: justify;
+    vertical-align: middle;
+    background-color: rgba(90, 90, 105, 0.4);
+    padding: 1%;
+    border-radius: 1em;
+    width: 40%;
+    height: 24%;
+    margin-left: 55%;
+    overflow: scroll;
+}
+
+.container {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.down-arrow {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
